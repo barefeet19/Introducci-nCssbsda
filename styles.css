@@ -1,20 +1,43 @@
-button {
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
 
-    background-color: grey; /* Color inicial del botón */
-  
-    color: white;
-  
-    padding: 10px 20px;
-  
-    border: none;
-  
-    cursor: pointer;
-  
-  }
-  
-  button:hover {
-  
-    background-color: blue; /* Color del botón cuando el ratón pasa por encima */
-  
-  }
-  
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para el botón */
+.boton {
+  display: block;
+  width: 200px;
+  padding: 15px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: #808080; /* color gris */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.boton:hover {
+  background-color: #FFEB3B; /* color amarillo */
+}
