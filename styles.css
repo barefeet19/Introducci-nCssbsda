@@ -77,3 +77,40 @@ p {
   border-radius: 8px;
   transition: opacity 0.3s ease;  /* Transición suave para el cambio de opacidad */
 }
+
+
+.container {
+  max-width: 1200px; /* Define un ancho máximo */
+  margin: 0 auto;    /* Centra el contenedor horizontalmente */
+  padding: 20px;     /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco para destacar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de caja */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.mosaico {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos bajen a nuevas líneas */
+  gap: 20px;       /* Espaciado uniforme entre cajas */
+  justify-content: center; /* Centra las cajas horizontalmente */
+}
+
+.fila {
+  flex-basis: calc(33.333% - 20px); /* Cada fila ocupa un tercio del ancho, menos el gap */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.imagen {
+  width: 100%; /* La imagen ocupará el ancho de su caja contenedora */
+  height: auto;
+}
+
+.texto {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
