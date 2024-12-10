@@ -41,3 +41,25 @@ p {
 .boton:hover {
   background-color: #FFEB3B; /* color amarillo */
 }
+
+/* Estilos para el mosaico de imágenes */
+.mosaico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+  gap: 20px;  /* Espacio entre las imágenes */
+  margin-bottom: 20px;
+}
+
+.imagen {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
