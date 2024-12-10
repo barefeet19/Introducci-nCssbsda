@@ -100,11 +100,6 @@ p {
   box-sizing: border-box; /* Incluye padding y borde en el ancho total */
 }
 
-.imagen {
-  width: 100%; /* La imagen ocupará el ancho de su caja contenedora */
-  height: auto;
-}
-
 .texto {
   padding: 20px;
   background-color: #fafafa;
