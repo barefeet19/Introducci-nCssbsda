@@ -42,7 +42,6 @@ p {
   background-color: #FFEB3B; /* color amarillo */
 }
 
-/* Estilos para el mosaico de imágenes */
 .mosaico {
   display: flex;
   flex-direction: column;
@@ -57,9 +56,22 @@ p {
   margin-bottom: 20px;
 }
 
+.boton-imagen {
+  background: none;  /* Eliminar el fondo del botón */
+  border: none;      /* Eliminar el borde del botón */
+  padding: 0;        /* Eliminar padding */
+  cursor: pointer;  /* Cambiar el cursor a un puntero */
+  outline: none;     /* Eliminar el borde de enfoque predeterminado */
+}
+
+.boton-imagen:hover .imagen {
+  opacity: 0.8;  /* Efecto visual al pasar el ratón por encima */
+}
+
 .imagen {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
+  transition: opacity 0.3s ease;  /* Transición suave para el cambio de opacidad */
 }
