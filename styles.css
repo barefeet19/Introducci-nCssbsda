@@ -1,6 +1,14 @@
 /* Estilos generales */
+@font-face {
+  font-family: 'Seasons';
+  src: url('fonts/Fontspring-DEMO-theseasons-lt.otf') format('otf'),
+       url('fonts/Fontspring-DEMO-theseasons-ltit.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Seasons', Arial, sans-serif;
   background-color: #f4f4f9;
   margin: 0;
   padding: 0;
@@ -11,7 +19,7 @@ h1 {
   color: black;
   margin-top: 50px;
   font-size: 50px;
-  font-family: 'Georgia', serif;
+  font-family: 'Seasons', serif;
   font-style: italic;
 }
 

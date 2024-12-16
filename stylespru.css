@@ -3,22 +3,22 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #e7dbc1;
             text-align: justify;
         }
 
         header {
-            background-color: #4caf50;
-            color: white;
+            background-color: #ad9f22;
+            color: #000000;
             text-align: center;
-            padding: 1.5rem 1rem;
+            padding: 3rem 3rem;
             font-family: 'Georgia', serif;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 75px;
+            font-family: 'seasons', Georgia, 'Times New Roman', Times, serif;
         }
 
         header h2 {
@@ -28,8 +28,8 @@
 
         .menu {
             display: flex;
-            justify-content: center;
-            background-color: #333;
+            justify-content: justify;
+            background-color: #ba4353;
         }
 
         .menu button {
@@ -59,11 +59,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 1rem;
+            margin: .7rem;
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 1rem;
+            padding: .7rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -77,6 +77,11 @@
         .flower-card img {
             max-width: 50%;
             border-radius: 8px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: opacity 0.3s ease; 
         }
 
         .flower-card p {
@@ -90,7 +95,7 @@
         }
 
         .flower-card p.expanded {
-            max-height: 10rem;
+            max-height: 20rem;
         }
 
         .flower-card button {
@@ -129,4 +134,14 @@
         footer a:hover {
             background-color: #45a049;
         }
+
+
+        @font-face {
+            font-family: 'seasons';
+            src: url(fonts/Fontspring-DEMO-theseasons-lt.otf);
+        }  
         
+        @font-face {
+            font-family: 'seasons2';
+            src: url(fonts/Fontspring-DEMO-theseasons-reg.otf);
+        }
