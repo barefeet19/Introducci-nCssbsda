@@ -1,0 +1,116 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .menu button {
+            background: none;
+            border: none;
+            color: white;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .menu button:hover, .menu button.active {
+            background-color: #4caf50;
+        }
+
+        .content {
+            padding: 2rem;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .flower-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .flower-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .flower-card p {
+            font-size: 0.9rem;
+            text-align: center;
+            margin: 0.5rem 0;
+            overflow: hidden;
+            max-height: 3rem;
+            transition: max-height 0.3s ease;
+        }
+
+        .flower-card p.expanded {
+            max-height: 10rem;
+        }
+
+        .flower-card button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .flower-card button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            display: inline-block;
+            background-color: #4caf50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        footer a:hover {
+            background-color: #45a049;
+        }
+        
