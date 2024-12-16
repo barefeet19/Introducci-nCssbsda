@@ -1,137 +1,107 @@
+/* Estilo general */
 body {
-  background-image: url('img/dalia-dia.jpg');
-  background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
-  background-position: center; /* Centra la imagen en la página */
-  background-attachment: fixed; /* La imagen de fondo se mantiene fija al hacer scroll */
-}
-
-body {
-  font-family: 'Seasons', Arial, sans-serif;
-  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-h1 {
+/* Encabezado */
+header {
+  background-color: #f4a261;
+  color: #fff;
+  padding: 20px 10px;
   text-align: center;
-  color: black;
-  margin-top: 50px;
-  font-size: 50px;
-  font-family: 'Seasons', serif;
+}
+
+header .slogan {
   font-style: italic;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: justify;
-  line-height: 1.6;
+/* Barra de navegación */
+.navbar {
+  background-color: #264653;
+  color: #fff;
 }
 
-/* Estilos para el botón */
-.boton {
-  display: block;
-  width: 200px;
-  padding: 15px;
-  margin: 30px auto;
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  background-color: #808080; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* Efecto al pasar el ratón */
-.boton:hover {
-  background-color: #f5eb92; /* color amarillo */
-}
-
-.mosaico {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.fila {
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;  /* Espacio entre las imágenes */
-  margin-bottom: 20px;
 }
 
-.boton-imagen {
-  background: none;  /* Eliminar el fondo del botón */
-  border: none;      /* Eliminar el borde del botón */
-  padding: 0;        /* Eliminar padding */
-  cursor: pointer;  /* Cambiar el cursor a un puntero */
-  outline: none;     /* Eliminar el borde de enfoque predeterminado */
+.navbar ul li {
+  margin: 0 15px;
 }
 
-.boton-imagen:hover .imagen {
-  opacity: 0.8;  /* Efecto visual al pasar el ratón por encima */
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.imagen {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: opacity 0.3s ease;  /* Transición suave para el cambio de opacidad */
+.navbar ul li a:hover {
+  text-decoration: underline;
 }
 
-
+/* Secciones principales */
 .container {
-  max-width: 1200px; /* Define un ancho máximo */
-  margin: 0 auto;    /* Centra el contenedor horizontalmente */
-  padding: 20px;     /* Espaciado interno */
-  background-color: #ffffff; /* Fondo blanco para destacar */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de caja */
-  border-radius: 10px; /* Bordes redondeados */
-}
-
-.mosaico {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos bajen a nuevas líneas */
-  gap: 20px;       /* Espaciado uniforme entre cajas */
-  justify-content: center; /* Centra las cajas horizontalmente */
-}
-
-.fila {
-  flex-basis: calc(33.333% - 20px); /* Cada fila ocupa un tercio del ancho, menos el gap */
-  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
-}
-
-.texto {
+  max-width: 1200px;
+  margin: auto;
   padding: 20px;
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  background-color: #e9c46a;
+  padding: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
+.flores .card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flores .resaltado {
+  color: #e76f51;
+  font-weight: bold;
+}
+
+/* Galería */
+.galeria .imagenes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galeria img {
+  max-width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
 footer {
-  background-color: #333;
-  color: #f4f4f9;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 10px 0;
 }
 
 footer a {
-  color: #4caf50;
+  color: #ffdd57;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #81c784;
+  text-decoration: underline;
 }

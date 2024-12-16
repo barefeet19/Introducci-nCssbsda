@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Las Flores</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el archivo CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flores Endémicas de México</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
     <div class="container">
-      <h1>Las Flores de México</h1>
-      <div class="texto">
-        <p>Las flores son una de las maravillas más hermosas de la naturaleza. Desde sus brillantes colores hasta sus cautivadores aromas, las flores han sido una fuente constante de inspiración para el arte, la poesía y la cultura en todo el mundo. Existen miles de especies de flores, cada una con sus propias características y simbolismos. Algunas flores, como las rosas, se asocian con el amor y la pasión, mientras que otras, como las margaritas, simbolizan la pureza y la inocencia.</p>
-        <p>A continuación te mostramos las 6 flores reconocidas por el Gobierno de México como el regalo nacional para el mundo, siendo especies endémicas caracterizadas por sus colores y su historia de origen.</p>
-        <div class="mosaico">
-            <div class="fila">
-                <button class="boton-imagen" onclick="alert('cempasuchil')">
-                    <img src="img/cempasuchil.webp" alt="cempasuchil" class="imagen">
-                </button>
-                <button class="boton-imagen" onclick="alert('dalia')">
-                    <img src="img/dalia.jpg" alt="dalia" class="imagen">
-                </button>
-                <button class="boton-imagen" onclick="alert('magnolia')">
-                    <img src="img/magnolia.jpg" alt="magnolia" class="imagen">
-                </button>
-            </div>
-            <div class="fila">
-                <button class="boton-imagen" onclick="alert('nochebuena')">
-                    <img src="img/nochebuena.jpeg" alt="nochebuena" class="imagen">
-                </button>
-                <button class="boton-imagen" onclick="alert('orquideapelicano')">
-                    <img src="img/orquideapelicano.jpeg" alt="orquideapelicano" class="imagen">
-                </button>
-                <button class="boton-imagen" onclick="alert('peyote')">
-                    <img src="img/peyote.jpg" alt="peyote" class="imagen">
-                </button>
-            </div>
-        </div>
-      <button class="boton">Ver más flores</button>
+      <h1>🌺 Flores Endémicas de México</h1>
+      <p class="slogan">Conoce la riqueza floral que nos hace únicos.</p>
     </div>
-  </body>
-<body>
-
-<footer>
-        <p>Créditos: Proyecto educativo sobre flores endémicas de México.</p>
-        <a href="https://www.gob.mx/semarnat/articulos/seis-flores-endemicas-que-son-un-regalo-de-mexico-para-el-mundo">Aprende más en CONABIO</a>
-</footer>
+  </header>
+  
+  <nav class="navbar">
+    <ul>
+      <li><a href="#introduccion">Inicio</a></li>
+      <li><a href="#flores">Flores</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="introduccion" class="intro">
+      <h2>¡Bienvenido!</h2>
+      <p>
+        México es hogar de <span class="resaltado">una de las biodiversidades más ricas del mundo</span>, incluyendo flores que no encontrarás en ningún otro lugar. Aquí exploraremos algunas de las especies más fascinantes.
+      </p>
+    </section>
     
+    <section id="flores" class="flores">
+      <h2>Conoce algunas especies</h2>
+      <div class="card">
+        <h3>Dalia</h3>
+        <p>
+          <span class="resaltado">Flor Nacional de México</span>, conocida por su vibrante colorido. Es originaria de los bosques templados del país.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Cempasúchil</h3>
+        <p>
+          Usada tradicionalmente en el Día de Muertos, su nombre significa "flor de veinte pétalos" en náhuatl.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Flor de Mayo</h3>
+        <p>
+          También llamada *Rosa de Castilla*, es conocida por su delicado aroma y hermosos colores.
+        </p>
+      </div>
+    </section>
+    
+    <section id="galeria" class="galeria">
+      <h2>Galería</h2>
+      <div class="imagenes">
+        <img src="dalia.jpg" alt="Dalia">
+        <img src="cempasuchil.jpg" alt="Cempasúchil">
+        <img src="flor-de-mayo.jpg" alt="Flor de Mayo">
+      </div>
+    </section>
+  </main>
+  
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas? Escríbenos a <a href="mailto:info@floresdemexico.com">info@floresdemexico.com</a></p>
+    <p>🌼 Gracias por visitarnos 🌼</p>
+  </footer>
+</body>
+</html>

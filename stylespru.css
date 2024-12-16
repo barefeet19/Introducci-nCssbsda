@@ -1,159 +1,158 @@
 .franja-arriba {
-    background-color: #ff6347; /* Color de la franja */
+    background-color: #faf9f8; /* Color de la franja */
     height: 60px; /* Altura de la franja */
     width: 100%; /* Ocupa todo el ancho de la página */
-  }
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3D0C3;
-            text-align: justify;
-        }
+}
 
-        header {
-            background-color: #f3D0C3;
-            color: #000000;
-            text-align: center;
-            padding: 3rem 3rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 23px;
-        }
-          
-        header h1 {
-            margin: 0;
-            font-size: 80px;
-            font-family: 'seasons', Georgia, 'Times New Roman', Times, serif;
-        }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Se eliminó el duplicado */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f4e8; 
+    text-align: justify;
+}
 
-        header h2 {
-            font-size: x-large;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+header {
+    background-color: #e8e5df;
+    color: #000000;
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cambiado para ser más genérico */
+    font-size: 23px;
+}
 
-        header h3 {
-            font-size: small;
-            font-family: serif;
-            color: whitesmoke;
-            text-align: right;
-              }
+header h1 {
+    margin: 0;
+    font-size: 80px;
+    font-family: 'seasons', Georgia, 'Times New Roman', Times, serif;
+}
 
-        .menu {
-            display: flex;
-            justify-content: justify;
-            background-color: #ba4353;
-        }
+header h2 {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-        .menu button {
-            background: none;
-            border: none;
-            color: white;
-            padding: 1rem 2rem;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
+header h3 {
+    font-size: small;
+    font-family: serif;
+    color: whitesmoke;
+    text-align: right;
+}
 
-        .menu button:hover, .menu button.active {
-            background-color: #4caf50;
-        }
+.menu {
+    display: flex;
+    justify-content: space-around; 
+    background-color: #efb34c;
+}
 
-        .content {
-            padding: 2rem;
-            display: none;
-        }
+.menu button {
+    background: none;
+    border: none;
+    color: black;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
 
-        .content.active {
-            display: block;
-        }
+.menu button:hover, .menu button.active {
+    background-color: #d2df56;
+}
 
-        .flower-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: .7rem;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: .7rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+.content {
+    padding: 2rem;
+    display: none;
+}
 
-        .columna {
-            display: flex;
-            justify-content: center;
-            gap: 20px;  /* Espacio entre las imágenes */
-            margin-bottom: 20px;
-          }
+.content.active {
+    display: block;
+}
 
-        .flower-card img {
-            max-width: 50%;
-            border-radius: 8px;
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-            transition: opacity 0.3s ease; 
-        }
+.flower-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.7rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.7rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .flower-card p {
-            font-size: 1rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: justify;
-            margin: 0.9rem;
-            overflow: hidden;
-            max-height: 6rem;
-            transition: max-height 0.3s ease;
-        }
+.columna {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
 
-        .flower-card p.expanded {
-            max-height: 20rem;
-        }
+.flower-card img {
+    max-width: 50%;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
 
-        .flower-card button {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+.flower-card p {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 0.9rem;
+    overflow: hidden;
+    max-height: 6rem;
+    transition: max-height 0.3s ease;
+}
 
-        .flower-card button:hover {
-            background-color: #45a049;
-        }
+.flower-card p.expanded {
+    max-height: 20rem;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
+.flower-card button {
+    background-color: #d2df56;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        footer a {
-            display: inline-block;
-            background-color: #4caf50;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 0.5rem;
-            transition: background-color 0.3s;
-        }
+.flower-card button:hover {
+    background-color: #45a049;
+}
 
-        footer a:hover {
-            background-color: #45a049;
-        }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
 
+footer a {
+    display: inline-block;
+    background-color: #d2df56;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+}
 
-        @font-face {
-            font-family: 'seasons';
-            src: url(fonts/Fontspring-DEMO-theseasons-lt.otf);
-        }  
-        
-        @font-face {
-            font-family: 'seasons2';
-            src: url(fonts/Fontspring-DEMO-theseasons-reg.otf);
-        }
+footer a:hover {
+    background-color: #45a049;
+}
+
+@font-face {
+    font-family: 'seasons';
+    src: url('fonts/Fontspring-DEMO-theseasons-lt.otf');
+}
+
+@font-face {
+    font-family: 'seasons2';
+    src: url('fonts/Fontspring-DEMO-theseasons-reg.otf');
+}
