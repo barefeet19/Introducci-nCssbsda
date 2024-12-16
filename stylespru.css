@@ -241,3 +241,16 @@ footer a:hover {
         font-size: 1.5rem; 
     }
 }
+
+@media (max-width: 600px) {
+    .flower-card img {
+        width: 80%; 
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row; /* Alineación horizontal de las tarjetas */
+    }
+}
