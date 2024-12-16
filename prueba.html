@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín Interactivo de México</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Jardín Interactivo de México</h1>
+        <p>Descubre la riqueza de las flores endémicas de nuestro país.</p>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section class="flower-grid">
+            <!-- Tarjeta de una flor -->
+            <div class="flower-card">
+                <img src="dahlia.jpg" alt="Dalia" class="flower-image">
+                <h2 class="flower-name">Dalia</h2>
+                <button class="info-button">Más Información</button>
+                <div class="flower-info hidden">
+                    <p>La Dalia es la flor nacional de México, conocida por su belleza y variedad de colores.</p>
+                </div>
+            </div>
+
+            <div class="flower-card">
+                <img src="cosmos.jpg" alt="Cosmos" class="flower-image">
+                <h2 class="flower-name">Cosmos</h2>
+                <button class="info-button">Más Información</button>
+                <div class="flower-info hidden">
+                    <p>El Cosmos es una flor silvestre que crece en climas templados y representa la armonía.</p>
+                </div>
+            </div>
+
+            <!-- Agrega más tarjetas aquí -->
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Créditos: Proyecto educativo sobre flores endémicas de México.</p>
+        <a href="https://www.gob.mx/conabio">Aprende más en CONABIO</a>
+    </footer>
+
+    <script>
+        // Lógica para mostrar/ocultar información
+        document.querySelectorAll('.info-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const info = button.nextElementSibling;
+                info.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
