@@ -201,6 +201,12 @@ footer {
     margin-top: 2rem;
 }
 
+@media (max-width: 600px) {
+    .flower-card {
+        width: 90%; /* Hacer que las tarjetas ocupen el 90% del ancho */
+    }
+}
+
 footer a {
     display: inline-block;
     background-color: #d2df56;
