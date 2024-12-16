@@ -43,7 +43,12 @@ header h3 {
     display: flex;
     justify-content: space-around; 
     background-color: #efb34c;
+    border-radius: 2rem; 
+    margin: 1rem; 
+    padding: 0.5rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
 
 .menu button {
     background: none;
