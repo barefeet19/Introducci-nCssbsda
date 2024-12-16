@@ -44,7 +44,7 @@ p {
 
 /* Efecto al pasar el ratón */
 .boton:hover {
-  background-color: #FFEB3B; /* color amarillo */
+  background-color: #f5eb92; /* color amarillo */
 }
 
 .mosaico {
@@ -114,7 +114,7 @@ p {
 
 footer {
   background-color: #333;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
