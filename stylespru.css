@@ -203,7 +203,7 @@ footer {
 
 @media (max-width: 600px) {
     .flower-card {
-        width: 90%; /* Hacer que las tarjetas ocupen el 90% del ancho */
+        width: 90%;
     }
 }
 
@@ -230,4 +230,14 @@ footer a:hover {
 @font-face {
     font-family: 'seasons2';
     src: url('fonts/Fontspring-DEMO-theseasons-reg.otf');
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 50px; 
+    }
+
+    header h2 {
+        font-size: 1.5rem; 
+    }
 }
