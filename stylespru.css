@@ -1,7 +1,7 @@
 .franja-arriba {
-    background-color: #41501f; 
-    height: 50px; 
-    width: 100%; 
+    background-color: #ff6347; /* Color de la franja */
+    height: 60px; /* Altura de la franja */
+    width: 100%; /* Ocupa todo el ancho de la página */
   }
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
@@ -30,6 +30,13 @@
             font-size: x-large;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+
+        header h3 {
+            font-size: small;
+            font-family: serif;
+            color: whitesmoke;
+            text-align: right;
+              }
 
         .menu {
             display: flex;
