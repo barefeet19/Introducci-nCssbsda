@@ -1,10 +1,8 @@
-/* Estilos generales */
-@font-face {
-  font-family: 'Seasons';
-  src: url('fonts/Fontspring-DEMO-theseasons-lt.otf') format('otf'),
-       url('fonts/Fontspring-DEMO-theseasons-ltit.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
+body {
+  background-image: url('img/dalia-dia.jpg');
+  background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen en la página */
+  background-attachment: fixed; /* La imagen de fondo se mantiene fija al hacer scroll */
 }
 
 body {
